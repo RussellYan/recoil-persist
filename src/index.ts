@@ -85,9 +85,6 @@ export const recoilPersist = (
   }
 
   const parseState = (state: string) => {
-    if (state === undefined) {
-      return {}
-    }
     try {
       return JSON.parse(state)
     } catch (e) {
